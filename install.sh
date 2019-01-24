@@ -11,7 +11,7 @@ sudo mkdir -p /opt/digitalocean-ddns/
 
 sudo cp -f update-dns-record.sh /opt/digitalocean-ddns/
 
-sudo chmod 600 /opt/digitalocean-ddns/update-dns-record.sh
+sudo chmod 700 /opt/digitalocean-ddns/update-dns-record.sh
 
 sudo sed -i "s/\$DO_TOKEN/$DO_TOKEN/g" /opt/digitalocean-ddns/update-dns-record.sh
 sudo sed -i "s/\$DO_DOMAIN/$DO_DOMAIN/g" /opt/digitalocean-ddns/update-dns-record.sh
