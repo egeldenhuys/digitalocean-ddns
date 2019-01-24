@@ -21,6 +21,6 @@ export DO_RECORD_ID=445653
 # Test
 ./update-dns-record
 ```
-4. Install with `sudo ./install.sh`
+4. Install with `./install.sh`
     - Will copy `update-dns-record.sh` to `/opt/digitalocean-ddns/` and replace the ENV variables with the actual values
     - Will copy systemd unit and timer to `/etc/systemd/system/` and activate it
