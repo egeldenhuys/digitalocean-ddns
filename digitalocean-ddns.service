@@ -1,0 +1,11 @@
+[Unit]
+Description=Update DNS record on DigitalOcean
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/opt/digitalocean-ddns/update-dns-record.sh
+
+[Install]
+WantedBy=multi-user.target
