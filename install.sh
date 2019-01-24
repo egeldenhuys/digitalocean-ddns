@@ -19,4 +19,7 @@ sed -i "s/\$DO_DOMAIN/$DO_DOMAIN/g" /opt/digitalocean-ddns/update-dns-record.sh
 sed -i "s/\$DO_RECORD_ID/$DO_RECORD_ID/g" /opt/digitalocean-ddns/update-dns-record.sh
 
 systemctl enable digitalocean-ddns.service
-systemctl enable --now digitalocean-ddns.timer
+systemctl enable digitalocean-ddns.timer
+
+systemctl stop digitalocean-ddns.timer
+systemctl start digitalocean-ddns.timer

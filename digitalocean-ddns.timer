@@ -2,6 +2,7 @@
 Description=Update DNS record on DigitalOcean every 10 minutes
 
 [Timer]
+OnBootSec=1min
 OnUnitActiveSec=10min
 
 [Install]
